@@ -23,8 +23,6 @@ import resetStyles from './styles/reset.css';
 import appStyles from './styles/app.css';
 import {Layout} from '~/components/Layout';
 import tailwindCss from './styles/tailwind.css';
-import {Theme} from '@radix-ui/themes';
-import '@radix-ui/themes/styles.css';
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
@@ -127,9 +125,7 @@ export default function App() {
       </head>
       <body>
         <Layout {...data}>
-          <Theme>
-            <Outlet />
-          </Theme>
+          <Outlet />
         </Layout>
         <ScrollRestoration nonce={nonce} />
         <Scripts nonce={nonce} />
