@@ -6,7 +6,7 @@
 import '@total-typescript/ts-reset';
 
 import type {Storefront, CustomerClient, HydrogenCart} from '@shopify/hydrogen';
-import type {AppSession} from '~/lib/session';
+import type {AppSession} from '@/utils/session';
 
 declare global {
   /**
